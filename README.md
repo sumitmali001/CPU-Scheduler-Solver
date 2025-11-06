@@ -4,7 +4,7 @@
 The project provides a visual and interactive way to understand how different CPU scheduling algorithms work by displaying process execution order, timing, and performance metrics.
 
 ## Overview
-This simulator allows users to input process details such as **Arrival Time (AT)**, **Burst Time (BT)**, and **Priority**, and then execute various scheduling algorithms.  
+This simulator allows users to input process details such as **Arrival Time (AT)**, **Burst Time (BT)**, **Priority**, and **Time Quantum (for Round Robin)**, and then execute various scheduling algorithms.  
 It calculates and displays important metrics such as **Completion Time (CT)**, **Turnaround Time (TAT)**, and **Waiting Time (WT)**, along with average performance values.  
 A **Gantt chart** is also generated to help visualize CPU utilization and process scheduling over time.
 
@@ -15,7 +15,13 @@ A **Gantt chart** is also generated to help visualize CPU utilization and proces
   - **Shortest Job First (SJF) – Non-Preemptive**
   - **Shortest Remaining Time First (SRTF)**
   - **Priority Scheduling – Non-Preemptive**
-  - **Round Robin** (with fixed quantum = 2)
+  - **Priority Scheduling – Preemptive**
+  - **Round Robin** (with user-defined time quantum)
+- User inputs for process attributes:
+  - **Arrival Time (AT)**
+  - **Burst Time (BT)**
+  - **Priority** (for priority algorithms)
+  - **Time Quantum** (for Round Robin)
 - Displays a detailed table showing all process statistics
 - Automatically computes **average turnaround time** and **average waiting time**
 - Generates a **Gantt chart** visualization using **Matplotlib**
